@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor( public authService: AuthenticationService, public router: Router ) {}
 
+  logout() {
+    this.authService.isLogin(true);
+    this.router.navigate(['login']);
+  }
 }
