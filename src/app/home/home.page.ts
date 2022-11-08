@@ -12,7 +12,7 @@ export class HomePage {
   constructor( public authService: AuthenticationService, public router: Router ) {}
 
   logout() {
-    // Condition
+    // Conditionn
     this.authService.isLogin(true);
     this.router.navigate(['login']);
   }
