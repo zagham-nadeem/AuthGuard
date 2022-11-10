@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Xyro</string>
+    <string name="title_activity_main">Xyro</string>
+    <string name="package_name">com.zagham.xyro</string>
+    <string name="custom_url_scheme">com.zagham.xyro</string>
+</resources>
