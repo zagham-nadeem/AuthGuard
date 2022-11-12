@@ -15,7 +15,7 @@ export class HomePage {
   logout() {
     // Conditionn
     this.authService.isLogin(true);
-    this.http.sendNotification('Zagham');
+    this.http.sendNotification('Ishwa');
     this.router.navigate(['login']);
   }
 }
